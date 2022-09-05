@@ -11,6 +11,7 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="./css/fonts.css">
 	<link rel='stylesheet' href='./css/style.css'>
+	<link rel="stylesheet" href="./css/media.css">
 	<title>Document</title>
 </head>
 
@@ -36,6 +37,9 @@
 							</a>
 						</div>
 						<nav class="menu">
+							<div class="header__btn-menu">
+								<span class="icon-bars"></span>
+							</div>
 							<ul>
 								<li><a href="#">Главная</a></li>
 								<li><a href="#">О компании</a></li>
@@ -52,7 +56,7 @@
 			<div class="container">
 				<div class="slider__inner">
 					<div class="slider__item-content">
-						<div class="slick__prev slick__btn slick__disabled"><button></button></div>
+						<div class="slick-prev slick-btn slick-disabled"><button></button></div>
 						<div class="slider__item">
 							<div class="slider__title">
 								Комплексне закриття підприємства.
@@ -65,23 +69,23 @@
 								<a href="#" class='default-btn '>Залишити заяву</a>
 							</div>
 						</div>
-						<div class="slick__next slick__btn slick__disabled"><button></button></div>
+						<div class="slick-next slick-btn slick-disabled"><button></button></div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<section class="services">
 			<div class="container">
-				<div class="services__top title-box__forked">
-					<div class="services__box title-box">
-						<div class=" services__box-title title-box__title">Наші послуги</div>
-						<div class="services__box-text title-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				<div class="top-box">
+					<div class="top-box__inner">
+						<div class="top-box__title">Наші послуги</div>
+						<div class="top-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit.
 							Eius tempore,
 							porro
 							ducimus officia veritatis cupiditate.</div>
 					</div>
-					<div class="services__box-btn title-box__btn">
+					<div class="top-box__btn">
 						<a href='#'>
 							Показати усі послуги
 						</a>
@@ -147,51 +151,50 @@
 		<section class="form">
 			<div class="container">
 				<div class="form__inner">
-					<div class="form__content">
-						<div class="form__box title-box">
-							<div class="form__box-title title-box__title">Отримати консультацію</div>
-							<div class="form__box-text title-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Eius tempore,
-								porro
-								ducimus officia veritatis cupiditate.
-							</div>
+					<div class="form__box top-box__inner">
+						<div class="form__box-title top-box__title">Отримати консультацію</div>
+						<div class="form__box-text top-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit.
+							Eius tempore,
+							porro
+							ducimus officia veritatis cupiditate.
 						</div>
-						<div class="form__box">
-							<form action="">
-								<div class="form__box-inner">
-									<div class="form__box-left">
-										<label for="">
-											E-mail
-											<input type="text">
-										</label>
-										<label for="">
-											Контактний телефон
-											<input type="text">
-										</label>
-										<label for="">
-											ПІБ
-											<input type="text">
-										</label>
-										<label for="">
-											Тема запитання
-											<select name="" id="">
-												<option>Перший</option>
-												<option>Другий</option>
-												<option>Третій</option>
-												<option>Четвертий</option>
-											</select>
-										</label>
-									</div>
-									<div class="form__box-right">
-										<label for="">
-											Повідомлення
-											<textarea></textarea>
-										</label>
-										<button class='default-btn' type="submit">Отримати консультацію</button>
-									</div>
+					</div>
+					<div class="form__box">
+						<form action="">
+							<div class="form__box-inner">
+								<div class="form__box-left">
+									<label for="">
+										E-mail
+										<input type="text">
+									</label>
+									<label for="">
+										Контактний телефон
+										<input type="text">
+									</label>
+									<label for="">
+										ПІБ
+										<input type="text">
+									</label>
+									<label for="">
+										Тема запитання
+										<select name="" id="">
+											<option>Перший</option>
+											<option>Другий</option>
+											<option>Третій</option>
+											<option>Четвертий</option>
+										</select>
+									</label>
 								</div>
-							</form>
-						</div>
+								<div class="form__box-right">
+									<label for="">
+										Повідомлення
+										<textarea></textarea>
+									</label>
+									<button class='default-btn' type="submit">Отримати консультацію</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -228,15 +231,15 @@
 		</section>
 		<section class="news">
 			<div class="container">
-				<div class="news__top title-box__forked">
-					<div class="news__title-box title-box">
-						<div class="news__box-title title-box__title">Наші послуги</div>
-						<div class="news__box-text title-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				<div class="news__top top-box">
+					<div class="news__title-box top-box__inner">
+						<div class="news__box-title top-box__title">Наші послуги</div>
+						<div class="news__box-text top-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 							Eius tempore,
 							porro
 							ducimus officia veritatis cupiditate.</div>
 					</div>
-					<div class="news__box-btn title-box__btn">
+					<div class="news__box-btn top-box__btn">
 						<a href='#'>
 							Показати усі послуги
 						</a>
@@ -250,18 +253,22 @@
 									Банкротство ы ліквідація підприємств України
 								</div>
 								<div class="news__slider-text">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque omnis, asperiores, repudiandae explicabo iste ea delectus enim ipsa eius soluta totam libero. Nostrum nulla hic voluptatibus aut et! Eos, esse!
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque omnis, asperiores,
+									repudiandae explicabo iste ea delectus enim ipsa eius soluta totam libero. Nostrum nulla hic
+									voluptatibus aut et! Eos, esse!
 								</div>
 								<div class="news__slider-author">
 									Андрій Ворошилов1, Lorem ipsum dolor sit.
 								</div>
 							</div>
-							<div class="news__slider-item">
+							<!-- <div class="news__slider-item">
 								<div class="news__slider-title">
 									Банкротство ы ліквідація підприємств України
 								</div>
 								<div class="news__slider-text">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque omnis, asperiores, repudiandae explicabo iste ea delectus enim ipsa eius soluta totam libero. Nostrum nulla hic voluptatibus aut et! Eos, esse!
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque omnis, asperiores,
+									repudiandae explicabo iste ea delectus enim ipsa eius soluta totam libero. Nostrum nulla hic
+									voluptatibus aut et! Eos, esse!
 								</div>
 								<div class="news__slider-author">
 									Андрій Ворошилов2, Lorem ipsum dolor sit.
@@ -272,14 +279,16 @@
 									Банкротство ы ліквідація підприємств України
 								</div>
 								<div class="news__slider-text">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque omnis, asperiores, repudiandae explicabo iste ea delectus enim ipsa eius soluta totam libero. Nostrum nulla hic voluptatibus aut et! Eos, esse!
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque omnis, asperiores,
+									repudiandae explicabo iste ea delectus enim ipsa eius soluta totam libero. Nostrum nulla hic
+									voluptatibus aut et! Eos, esse!
 								</div>
 								<div class="news__slider-author">
 									Андрій Ворошилов3, Lorem ipsum dolor sit.
 								</div>
-							</div>
-							<div class="slick__prev slick__btn slick__disabled"><button></button></div>
-							<div class="slick__next slick__btn slick__disabled"><button></button></div>
+							</div> -->
+							<div class="slick-prev slick-btn slick-disabled"><button></button></div>
+							<div class="slick-next slick-btn slick-disabled"><button></button></div>
 						</div>
 					</div>
 					<a href='#' class="news__blog">
@@ -288,7 +297,8 @@
 							<div class="news-date">03.04</div>
 						</div>
 						<div class="news__blog-title">Новина компанії</div>
-						<div class="news__blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, placeat possimus! Dolor voluptates natus magnam.</div>
+						<div class="news__blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, placeat
+							possimus! Dolor voluptates natus magnam.</div>
 					</a>
 					<a href='#' class="news__blog">
 						<div class="news__images">
@@ -296,12 +306,59 @@
 							<div class="news-date">03.04</div>
 						</div>
 						<div class="news__blog-title">Новина компанії</div>
-						<div class="news__blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, placeat possimus! Dolor voluptates natus magnam.</div>
+						<div class="news__blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, placeat
+							possimus! Dolor voluptates natus magnam.</div>
 					</a>
 				</div>
 			</div>
 		</section>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__info">
+							<div class="footer__title">
+								Комплексне закриття підприємств
+							</div>
+							<div class="footer__text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam praesentium consectetur
+								voluptatibus.
+							</div>
+							<a class='header__btn' id="modal" href="#">Бессплатная консультация
+							</a>
+							<ul class="footer__list">
+								<li><a class='footer__phone' href="tel:3800963092145">+380 (096) 309 21 45</a></li>
+								<li><a href="#">layout58@gmail.com</a></li>
+								<li><a class='footer__adress' href="#">Київ, вул.Феодори Пушиної, 13</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__map">
+							<iframe height="250px"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10160.497634112968!2d30.358355940292288!3d50.4574079716196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc919501b4ef%3A0x71a476f68f4c8246!2z0LLRg9C70LjRhtGPINCk0LXQvtC00L7RgNC4INCf0YPRiNC40L3QvtGXLCAxMywg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1662116070268!5m2!1suk!2sua"
+								style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<div class="container">
+						<div class="copy__text">
+							2017 Lorem ipsum dolor sit, amet consectetur adipisicing.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
+
+	<!-- <div id="modal">
+		<form action="">
+			<input type="text" placeholder="Ваше ім'я">
+			<input type="text" placeholder="Ваш телефон">
+			<input type="submit" value="Відправити">
+		</form>
+	</div> -->
 
 	<script src='./js/index.js'></script>
 </body>
